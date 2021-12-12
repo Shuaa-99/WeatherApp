@@ -14,8 +14,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var city = "10001"
-    val API: String = "e812abc2cc4df7d6a36d190e5d2db50a" // Use API key
+    private var cityZip = "10001"
+    val API: String = "8a316bae40ca552c86771c6d73150592" // Use API key
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         override fun doInBackground(vararg params: String?): String? {
             var response:String?
             try{
-                response = URL("https://api.openweathermap.org/data/2.5/weather?zip=$city&units=metric&appid=$API").readText(
+                response = URL("https://api.openweathermap.org/data/2.5/weather?zip=$cityZip&units=metric&appid=$API").readText(
                     Charsets.UTF_8
                 )
             }catch (e: Exception){
