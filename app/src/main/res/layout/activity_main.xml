@@ -14,10 +14,10 @@
             android:gravity="center">
             <TextView android:id="@+id/address" android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:textSize="24dp"
-                android:text="DHAKA, BD"/>
+                android:text=".............."/>
             <TextView android:id="@+id/updated_at" android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:textSize="14dp"
-                android:text="20 April 2012, 20:08 PM"/>
+                android:text="......."/>
         </LinearLayout>
 
 
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Clear Sky"
+                android:text="...."
                 android:textSize="18dp" />
 
             <TextView
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-thin"
-                android:text="29°C"
+                android:text="......"
                 android:textSize="90dp" />
 
             <LinearLayout
@@ -187,15 +187,5 @@
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
-
-
-    <ProgressBar android:id="@+id/loader" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_centerInParent="true"
-        android:visibility="gone"/>
-
-    <TextView android:id="@+id/errorText" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_centerInParent="true"
-        android:visibility="gone" android:text="Something went wrong"/>
-
 
 </RelativeLayout>
